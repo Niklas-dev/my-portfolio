@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 export default function ProjectCard({
   title,
   image,
@@ -24,6 +25,8 @@ export default function ProjectCard({
     threshold: 0.1,
     triggerOnce: true,
   });
+
+  const router = useRouter();
   return (
     <div
       ref={ref}
@@ -32,7 +35,8 @@ export default function ProjectCard({
       } p-4 gap-4 shadow-xl hidden-object ${inView && "show-object"}`}
     >
       <Image
-        className="h-full w-full md:w-[45%] object-cover rounded-xl text-firstwhite"
+        onClick={() => window.open(site, "_blank")!.focus()}
+        className="h-full w-full md:w-[45%] object-cover rounded-xl text-firstwhite hover:grayscale transition-colors cursor-pointer"
         src={image}
         alt="scribbleseekerr"
         height={1000}
