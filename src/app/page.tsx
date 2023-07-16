@@ -25,14 +25,14 @@ export default function Home() {
       duration: 0.3,
       opacity: 1,
       y: 0,
-      ease: "power2.easeInOut",
+      ease: "power2.easeOut",
     });
     timeline.to(".nav-item", {
       duration: 0.3,
       opacity: 1,
 
       x: 0,
-      ease: "power2.easeInOut",
+      ease: "power2.easeOut",
       stagger: {
         amount: 1.2,
       },

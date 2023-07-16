@@ -21,7 +21,7 @@ export default function NavBar() {
         <div className="h-1 bg-gradient-to-r  from-firstwhite via-transparent   to-firstwhite bg-transparent"></div>
       </div>
       <div className="text-white block md:hidden">nav</div>
-      <div className="hidden md:flex flex-row gap-4 z-40 bg-transparent m">
+      <div className="hidden md:flex flex-row items-center gap-6 z-40 bg-transparent m">
         <Link
           href={"#projects"}
           className="cursor-pointer text-xl  text-black   bg-firstwhite  rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-gray-400 transition-colors nav-item opacity-0 translate-x-32"
@@ -39,6 +39,19 @@ export default function NavBar() {
           className="cursor-pointer text-xl text-firstwhite border-firstwhite border-r-8 border-l-transparent border-l-8 hover:border-r-4 hover:border-l-4  rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-black transition-all  bg-transparent nav-item opacity-0 translate-x-32"
         >
           Contact
+        </Link>
+        <Link
+          className="bg-transparent p-2 hover:bg-black transition-colors rounded-full nav-item opacity-0 translate-x-32"
+          target="_blank"
+          href={"https://github.com/Niklas-dev"}
+        >
+          <Image
+            className="bg-transparent"
+            src={"./github-mark-white.svg"}
+            alt="github"
+            width={40}
+            height={40}
+          />
         </Link>
       </div>
     </nav>
