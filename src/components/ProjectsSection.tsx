@@ -1,7 +1,5 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import ProjectCard from "./ProjectCard";
-import Link from "next/link";
 import OtherProjects from "./OtherProjects";
 
 export default function ProjectsSection() {

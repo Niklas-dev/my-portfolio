@@ -73,4 +73,3 @@ export default function HomeSection() {
     </div>
   );
 }
-//https://lottie.host/7a54126d-8332-43b5-97c1-2d52bad61576/yr2q0xBYu2.json
