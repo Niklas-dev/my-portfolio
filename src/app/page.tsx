@@ -21,6 +21,23 @@ export default function Home() {
       },
     });
 
+    timeline.to(".navbar", {
+      duration: 0.3,
+      opacity: 1,
+      y: 0,
+      ease: "power2.easeInOut",
+    });
+    timeline.to(".nav-item", {
+      duration: 0.3,
+      opacity: 1,
+
+      x: 0,
+      ease: "power2.easeInOut",
+      stagger: {
+        amount: 1.2,
+      },
+    });
+
     return () => {};
   }, []);
 
