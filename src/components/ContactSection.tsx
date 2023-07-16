@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.1,
+    threshold: 0.2,
     triggerOnce: true,
   });
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+        form.current!,
+        process.env.NEXT_PUBLIC_USER_ID!
+      )
+      .then((result) => result.text)
+      .catch((error) => console.log(error));
+  };
   return (
     <div
       id="about"
@@ -25,21 +42,34 @@ export default function ContactSection() {
           Lets talk about your upcoming projects or ideas. I would love to work
           with you to achieve the best outcome.
         </p>
-        <form className="bg-transparent flex flex-col gap-8 pt-4 h-full">
+        <form
+          onSubmit={handleSubmit}
+          ref={form}
+          className="bg-transparent flex flex-col gap-8 pt-4 h-full"
+        >
           <div className="flex flex-row bg-transparent gap-8">
             <input
+              name="user_name"
+              id="user_name"
               type="text"
               placeholder="Name"
+              required
               className="h-14 w-1/2 bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium py-2 outline-none focus:border-2 border-white"
             />
             <input
+              name="user_email"
+              id="user_email"
               type="text"
+              required
               placeholder="Email"
               className="h-14 w-1/2 bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium py-2 outline-none focus:border-2 border-white"
             />
           </div>
           <textarea
-            placeholder="Text"
+            name="message"
+            id="message"
+            required
+            placeholder="Your message"
             className="h-full w-full bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium resize-none py-4 outline-none focus:border-2 border-white"
           />
           <button className="bg-firstwhite font-medium text-xl py-2 w-full rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors ">
