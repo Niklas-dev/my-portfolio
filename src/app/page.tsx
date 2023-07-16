@@ -2,6 +2,7 @@
 import HomeSection from "@/components/HomeSection";
 
 import ParticlesBackground from "@/components/ParticlesBackground";
+import ProjectsSection from "@/components/ProjectsSection";
 import { gsap } from "gsap";
 import { useLayoutEffect } from "react";
 
@@ -42,11 +43,10 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen w-screen overflow-y-hidden">
+    <main className="h-screen w-screen overflow-x-hidden ">
       <ParticlesBackground />
       <HomeSection />
-
-      <div className="h-screen bg-black"></div>
+      <ProjectsSection />
     </main>
   );
 }

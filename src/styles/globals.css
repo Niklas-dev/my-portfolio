@@ -15,3 +15,16 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+.hidden-object {
+  opacity: 0;
+
+  transform: translateY(300px);
+  transition: all 0.6s ease-in-out;
+}
+
+.show-object {
+  opacity: 1;
+
+  transform: translateY(0);
+}

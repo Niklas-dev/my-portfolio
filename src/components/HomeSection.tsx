@@ -36,7 +36,7 @@ export default function HomeSection() {
     return () => {};
   }, []);
   return (
-    <div className="flex flex-col w-full h-full relative bg-transparent">
+    <div className="flex flex-col w-full h-screen relative  z-30 bg-transparent">
       <NavBar />
       <div
         className="absolute z-30"

@@ -46,8 +46,8 @@ const particlesConfig = {
         enable: true,
         mode: "attract",
         parallax: {
-          enable: false,
-          force: 2,
+          enable: true,
+          force: 10,
           smooth: 10,
         },
       },
