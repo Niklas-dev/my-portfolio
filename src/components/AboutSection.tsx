@@ -13,7 +13,7 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="flex flex-col items-center w-full h-screen relative  z-30  bg-transparent pt-40 gap-16 px-2"
+      className="flex flex-col items-center w-full h-fit relative  z-30  bg-transparent pt-40 gap-16 px-2"
     >
       <div
         ref={ref}
