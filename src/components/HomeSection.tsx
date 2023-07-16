@@ -6,8 +6,8 @@ import LottiePlayer from "./LottiePlayer";
 export default function HomeSection() {
   const headline = useRef<HTMLDivElement>(null);
   const [mousePos, setMousePos] = useState({
-    x: 0,
-    y: 0,
+    x: 150,
+    y: 400,
   });
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
@@ -42,26 +42,26 @@ export default function HomeSection() {
         className="absolute z-30"
         style={{ top: mousePos.y, left: mousePos.x }}
       >
-        <div className="rounded-full w-[150px] h-[150px] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] absolute blur-[150px] bg-firstwhite animate-pulse "></div>
+        <div className="rounded-full w-[150px] h-[150px] xxl:w-[250px] xxl:h-[250px] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] absolute blur-[150px] bg-firstwhite animate-pulse "></div>
       </div>
-      <div className=" h-full w-full flex flex-col items-center lg:mt-72 xl:mt-96 gradient z-20 bg-transparent">
+      <div className=" h-full w-full flex flex-col items-center mt-40 lg:mt-72 xxl:mt-96 gradient z-20 bg-transparent">
         <div
           ref={headline}
           className="flex flex-col items-center bg-transparent"
         >
-          <div className="flex flex-row justify-center gap-2 text-firstwhite lg:text-3xl xl:text-4xl font-medium bg-transparent">
+          <div className="flex flex-row justify-center gap-2 text-firstwhite text-lg lg:text-3xl xxl:text-4xl font-medium bg-transparent">
             <p className=" word opacity-0 scale-0 text-center">Hello,</p>
             <p className="word opacity-0 scale-0 text-center"> It&apos;s me</p>
           </div>
-          <h1 className="lg:text-7xl xl:text-8xl font-bold word opacity-0 scale-0  text-center text-firstwhite bg-transparent">
+          <h1 className="text-5xl lg:text-7xl xxl:text-8xl font-bold word opacity-0 scale-0  text-center text-firstwhite bg-transparent">
             Niklas-dev
           </h1>
-          <p className="lg:text-xl xl:text-2xl font-normal word opacity-0 scale-0  text-center text-gray-400 w-1/2 pt-4 bg-transparent">
+          <p className="text-lg lg:text-xl xxl:text-2xl font-normal word opacity-0 scale-0  text-center text-gray-400 w-3/4 md:w-1/2 pt-2 md:pt-4 bg-transparent">
             I am a fullstack focused webdeveloper. I design, plan out and
             develop web apps from the ground up to solve your problem.
           </p>
         </div>
-        <div className="lg:mt-20 xl:mt-28 bg-transparent">
+        <div className="mt-16 lg:mt-20 xxl:mt-52 bg-transparent">
           <LottiePlayer
             loop
             autoplay
