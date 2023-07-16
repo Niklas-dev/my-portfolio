@@ -4,12 +4,16 @@ import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 export default function ProjectCard({
   title,
+  image,
   description,
   tags,
+  reserve,
 }: {
   title: string;
+  image: string;
   description: string;
   tags: string[];
+  reserve: boolean;
 }) {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -19,13 +23,13 @@ export default function ProjectCard({
   return (
     <div
       ref={ref}
-      className={`w-[70rem] h-[26rem] bg-[#0a0a0a] bg-opacity-95 rounded-xl flex flex-row p-4 gap-4 shadow-xl hidden-object ${
-        inView && "show-object"
-      }`}
+      className={` md:w-[48rem] lg:w-[63rem] h-fit lg:h-[26rem] bg-[#0a0a0a] bg-opacity-95 rounded-xl flex ${
+        reserve ? "flex-col md:flex-row-reverse" : "flex-col md:flex-row"
+      } p-4 gap-4 shadow-xl hidden-object ${inView && "show-object"}`}
     >
       <Image
-        className="h-full w-3/5 object-fit rounded-xl "
-        src={"/scribbleseekerr.png"}
+        className="h-full w-full md:w-[45%] object-cover rounded-xl text-firstwhite"
+        src={image}
         alt="scribbleseekerr"
         height={1000}
         width={1000}
@@ -60,7 +64,7 @@ export default function ProjectCard({
           </div>
         </div>
 
-        <div className="flex flex-row w-full h-fit gap-4 bg-transparent">
+        <div className="flex flex-row w-full h-fit gap-4 bg-transparent pt-4">
           <Link
             className="bg-firstwhite font-medium text-xl py-2  w-1/2 rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors"
             href="/"
