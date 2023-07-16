@@ -23,22 +23,22 @@ export default function NavBar() {
       <div className="text-white block md:hidden">nav</div>
       <div className="hidden md:flex flex-row gap-4 z-40 bg-transparent m">
         <Link
-          href={"/projects"}
+          href={"#projects"}
           className="cursor-pointer text-xl  text-black   bg-firstwhite  rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-gray-400 transition-colors nav-item opacity-0 translate-x-32"
         >
           Projects
         </Link>
         <Link
-          href={"/projects"}
-          className="cursor-pointer text-xl text-firstwhite  rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-black transition-colors bg-transparent nav-item opacity-0 translate-x-32"
+          href={"#about"}
+          className="cursor-pointer text-xl text-firstwhite   rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-black transition-colors bg-transparent nav-item opacity-0 translate-x-32"
         >
-          Projects
+          About
         </Link>
         <Link
-          href={"/projects"}
-          className="cursor-pointer text-xl text-firstwhite  rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-black transition-colors bg-transparent nav-item opacity-0 translate-x-32"
+          href={"#contact"}
+          className="cursor-pointer text-xl text-firstwhite border-firstwhite border-r-8 border-l-transparent border-l-8 hover:border-r-4 hover:border-l-4  rounded-full h-12 w-32 flex justify-center items-center font-bold hover:bg-black transition-all  bg-transparent nav-item opacity-0 translate-x-32"
         >
-          Projects
+          Contact
         </Link>
       </div>
     </nav>
