@@ -53,7 +53,7 @@ export default function AboutSection() {
           </div>
           <Link
             className="bg-firstwhite font-medium text-xl py-2 w-1/2 rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors mt-4"
-            href=""
+            href="/#contact"
           >
             Contact Me
           </Link>

@@ -27,7 +27,7 @@ export default function ContactSection() {
   };
   return (
     <div
-      id="about"
+      id="contact"
       className="flex flex-col justify-center items-center w-full h-screen relative  z-30  bg-transparent pt-40 gap-16 px-2 pb-8"
     >
       <div
