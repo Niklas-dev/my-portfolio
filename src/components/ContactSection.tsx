@@ -18,27 +18,29 @@ export default function ContactSection() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID!,
-        form.current!,
-        process.env.NEXT_PUBLIC_USER_ID!
-      )
-      .then((result) => {
-        setHasSent(true);
+    if (hasSent) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+          form.current!,
+          process.env.NEXT_PUBLIC_USER_ID!
+        )
+        .then((result) => {
+          setHasSent(true);
 
-        form.current!.reset();
-        setTimeout((timeout: any) => {
+          form.current!.reset();
+          setTimeout((timeout: any) => {
+            setHasSent(false);
+            clearTimeout(timeout);
+          }, 4000);
+          console.log(result.text);
+        })
+        .catch((error) => {
           setHasSent(false);
-          clearTimeout(timeout);
-        }, 4000);
-        console.log(result.text);
-      })
-      .catch((error) => {
-        setHasSent(false);
-        console.log(error);
-      });
+          console.log(error);
+        });
+    }
   };
   return (
     <div
