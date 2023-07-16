@@ -18,7 +18,7 @@ export default function ParticlesBackground() {
   }, []);
   return (
     <Particles
-      className=" w-full h-full particles-canvas grayscale absolute bg-black"
+      className="z-10 w-full h-full particles-canvas grayscale absolute bg-black"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
