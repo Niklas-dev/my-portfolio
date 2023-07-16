@@ -8,12 +8,16 @@ export default function ProjectCard({
   description,
   tags,
   reserve,
+  site,
+  sourceCode,
 }: {
   title: string;
   image: string;
   description: string;
   tags: string[];
   reserve: boolean;
+  site: string;
+  sourceCode: string;
 }) {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -67,13 +71,15 @@ export default function ProjectCard({
         <div className="flex flex-row w-full h-fit gap-4 bg-transparent pt-4">
           <Link
             className="bg-firstwhite font-medium text-xl py-2  w-1/2 rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors"
-            href="/"
+            target="_blank"
+            href={site}
           >
             View Site
           </Link>
           <Link
             className="bg-transparent border-firstwhite border-2 font-medium text-firstwhite text-xl py-2 w-1/2 rounded-xl flex justify-center items-center hover:bg-black transition-colors"
-            href="/"
+            target="_blank"
+            href={sourceCode}
           >
             Source Code
           </Link>

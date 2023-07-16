@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
-
+import Link from "next/link";
+import Image from "next/image";
 export default function ContactSection() {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -31,7 +32,7 @@ export default function ContactSection() {
     >
       <div
         ref={ref}
-        className={` w-full lg:w-[65rem] h-[30rem]  bg-[#0a0a0a]  bg-opacity-95  flex flex-col  gap-4 shadow-xl hidden-object p-4 lg:p-6 rounded-xl ${
+        className={` w-full lg:w-[65rem] h-fit  bg-[#0a0a0a]  bg-opacity-95  flex flex-col  gap-4 shadow-xl hidden-object p-4 lg:p-6 rounded-xl ${
           inView && "show-object"
         }`}
       >
@@ -76,6 +77,27 @@ export default function ContactSection() {
             Submit
           </button>
         </form>
+        <div className="flex flex-row gap-4 items-center bg-transparent">
+          <Link
+            className="bg-[#1e1e1e] rounded-full p-2 hover:bg-black cursor-pointer transition-colors"
+            target="_blank"
+            href={"https://github.com/Niklas-dev"}
+          >
+            <Image
+              className="bg-transparent"
+              src={"./github-mark-white.svg"}
+              alt="github"
+              width={30}
+              height={30}
+            />
+          </Link>
+          <a
+            href="mailto:niklas.developers@gmail.com"
+            className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite w-fit hover:bg-black cursor-pointer transition-colors"
+          >
+            niklas.developers@gmail.com
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -25,6 +25,8 @@ export default function ProjectsSection() {
         report system and profile managment."
         tags={["django", "drf", "postgres", "oauth2", "nextjs", "tailwind"]}
         reserve={false}
+        site="https://scribbleseekerr.vercel.app/"
+        sourceCode="https://github.com/Niklas-dev/scribbleseekerr"
       />
       <ProjectCard
         title="NameNation"
@@ -32,6 +34,8 @@ export default function ProjectsSection() {
         description="Check the national background of your name along with an age conntected to the given input."
         tags={["nextjs", "rest", "api", "tailwind", "hooks"]}
         reserve={true}
+        site="https://namenation.vercel.app/"
+        sourceCode="https://github.com/Niklas-dev/namenation"
       />
       <ProjectCard
         title="PlainMindMap"
@@ -39,6 +43,8 @@ export default function ProjectsSection() {
         description="Easily create mind maps about every topic. Enhance the power of gpt by just using the provided layout."
         tags={["nextjs", "react-flow", "tailwind", "gpt"]}
         reserve={false}
+        site="https://plain-mindmap-app.vercel.app/"
+        sourceCode="https://github.com/Niklas-dev/plain-mindmap-app"
       />
       <ProjectCard
         title="My Portfolio"
@@ -53,6 +59,8 @@ export default function ProjectsSection() {
           "html5",
           "css",
         ]}
+        site="https://new-portfolio-three-gilt.vercel.app/"
+        sourceCode="https://github.com/Niklas-dev/new-portfolio"
         reserve={true}
       />
 
