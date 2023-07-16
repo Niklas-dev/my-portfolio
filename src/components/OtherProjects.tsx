@@ -12,7 +12,7 @@ export default function OtherProjects() {
     <Link
       ref={ref}
       target="_blank"
-      className={`z-40 text-xl text-gray-200 font-bold pb-4 hover:underline  hidden-object  ${
+      className={`z-40 text-xl text-gray-200 font-bold pb-4 hover:underline  hidden-object text-center  ${
         inView && "show-object"
       }`}
       href={"https://github.com/Niklas-dev"}
