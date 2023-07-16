@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import ProjectCard from "./ProjectCard";
+import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
@@ -50,6 +51,14 @@ export default function ProjectsSection() {
         ]}
         reserve={true}
       />
+
+      <Link
+        target="_blank"
+        className="z-40 text-lg text-gray-300 font-bold pb-4 hover:underline"
+        href={"https://github.com/Niklas-dev"}
+      >
+        All other projects are on my github.
+      </Link>
     </div>
   );
 }
