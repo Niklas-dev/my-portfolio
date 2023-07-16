@@ -45,9 +45,6 @@ export default function Skills() {
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           HTML
         </div>
-        <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
-          CSS
-        </div>
       </div>
       <div className="flex flex-row bg-transparent gap-2">
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
@@ -72,6 +69,9 @@ export default function Skills() {
         </div>
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           Android
+        </div>
+        <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
+          CSS
         </div>
       </div>
     </>
