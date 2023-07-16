@@ -18,7 +18,7 @@ export default function LottiePlayer({
   return (
     <Player
       data-testid={testID}
-      className={classes}
+      className={`${classes}`}
       autoplay
       loop={loop}
       src={src}

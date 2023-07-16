@@ -5,7 +5,10 @@ import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
-    <div className="flex flex-col items-center w-full h-fit relative  z-30  bg-transparent pt-40 gap-16 px-2">
+    <div
+      id="projects"
+      className="flex flex-col items-center w-full h-fit relative  z-30  bg-transparent pt-40 gap-16 px-2"
+    >
       <div className="bg-transparent flex flex-col items-center">
         <h1 className="z-40 text-5xl text-firstwhite font-bold py-3">
           My Projects
