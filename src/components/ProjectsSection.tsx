@@ -9,10 +9,10 @@ export default function ProjectsSection() {
       className="flex flex-col items-center w-full h-fit relative  z-30  bg-transparent pt-40 gap-16 px-2"
     >
       <div className="bg-transparent flex flex-col items-center">
-        <h1 className="z-40 text-5xl text-firstwhite font-bold py-3">
+        <h1 className="z-40 text-5xl text-firstwhite font-bold py-3 text-center">
           My Projects
         </h1>
-        <p className="z-40 text-lg text-gray-300 font-normal ">
+        <p className="z-40 text-lg text-gray-300 font-normal text-center">
           See what I have created during my fullstack journey.
         </p>
       </div>
