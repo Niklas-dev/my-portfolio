@@ -20,7 +20,21 @@ export default function NavBar() {
       >
         <div className="h-1 bg-gradient-to-r  from-firstwhite via-transparent   to-firstwhite bg-transparent"></div>
       </div>
-      <div className="text-white block md:hidden">nav</div>
+      <div className="text-white md:hidden bg-transparent flex items-center justify-center">
+        <Link
+          className="bg-transparent rounded-full "
+          target="_blank"
+          href={"https://github.com/Niklas-dev"}
+        >
+          <Image
+            className="bg-transparent"
+            src={"./github-mark-white.svg"}
+            alt="github"
+            width={45}
+            height={45}
+          />
+        </Link>
+      </div>
       <div className="hidden md:flex flex-row items-center gap-6 z-40 bg-transparent m">
         <Link
           href={"#projects"}
