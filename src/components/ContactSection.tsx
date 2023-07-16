@@ -27,11 +27,12 @@ export default function ContactSection() {
       )
       .then((result) => {
         setHasSent(true);
+
         form.current!.reset();
         setTimeout((timeout: any) => {
           setHasSent(false);
           clearTimeout(timeout);
-        }, 2000);
+        }, 4000);
         console.log(result.text);
       })
       .catch((error) => {
