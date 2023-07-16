@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import Image from "next/image";
+import { FaCheck, FaArrowRight } from "react-icons/fa";
 export default function ContactSection() {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -11,6 +12,8 @@ export default function ContactSection() {
   });
 
   const form = useRef<HTMLFormElement>(null);
+
+  const [hasSent, setHasSent] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -22,8 +25,14 @@ export default function ContactSection() {
         form.current!,
         process.env.NEXT_PUBLIC_USER_ID!
       )
-      .then((result) => result.text)
-      .catch((error) => console.log(error));
+      .then((result) => {
+        setHasSent(true);
+        console.log(result.text);
+      })
+      .catch((error) => {
+        setHasSent(false);
+        console.log(error);
+      });
   };
   return (
     <div
@@ -60,7 +69,7 @@ export default function ContactSection() {
             <input
               name="user_email"
               id="user_email"
-              type="text"
+              type="email"
               required
               placeholder="Email"
               className="h-14 w-1/2 bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium py-2 outline-none focus:border-2 border-white"
@@ -74,7 +83,11 @@ export default function ContactSection() {
             className="h-full w-full bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium resize-none py-4 outline-none focus:border-2 border-white"
           />
           <button className="bg-firstwhite font-medium text-xl py-2 w-full rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors ">
-            Submit
+            {hasSent ? (
+              <FaCheck className="bg-transparent h-8" />
+            ) : (
+              <FaArrowRight className="bg-transparent h-8" />
+            )}
           </button>
         </form>
         <div className="flex flex-row gap-4 items-center bg-transparent">
