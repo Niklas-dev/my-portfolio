@@ -48,15 +48,7 @@ export default function ProjectsSection() {
         title="My Portfolio"
         image="/portfolio.png"
         description="My personal portfolio, demonstrating my projects and skills."
-        tags={[
-          "nextjs",
-          "tailwind",
-          "design",
-          "responsive",
-          "ts-particles",
-          "html5",
-          "css",
-        ]}
+        tags={["nextjs", "tailwind", "design", "css", "ts-particles", "html5"]}
         site="https://new-portfolio-three-gilt.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/new-portfolio"
         reserve={true}
