@@ -1,9 +1,9 @@
 "use client";
 import HomeSection from "@/components/HomeSection";
-import NavBar from "@/components/NavBar";
+
 import ParticlesBackground from "@/components/ParticlesBackground";
 import { gsap } from "gsap";
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 
 export default function Home() {
   useLayoutEffect(() => {
