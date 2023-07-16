@@ -44,24 +44,24 @@ export default function HomeSection() {
       >
         <div className="rounded-full w-[150px] h-[150px] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] absolute blur-[150px] bg-firstwhite animate-pulse "></div>
       </div>
-      <div className=" h-full w-full flex flex-col items-center mt-72 gradient z-20 bg-transparent">
+      <div className=" h-full w-full flex flex-col items-center lg:mt-72 xl:mt-96 gradient z-20 bg-transparent">
         <div
           ref={headline}
           className="flex flex-col items-center bg-transparent"
         >
-          <div className="flex flex-row justify-center gap-2 text-firstwhite text-3xl font-medium bg-transparent">
+          <div className="flex flex-row justify-center gap-2 text-firstwhite lg:text-3xl xl:text-4xl font-medium bg-transparent">
             <p className=" word opacity-0 scale-0 text-center">Hello,</p>
             <p className="word opacity-0 scale-0 text-center"> It&apos;s me</p>
           </div>
-          <h1 className="text-7xl font-bold word opacity-0 scale-0  text-center text-firstwhite bg-transparent">
+          <h1 className="lg:text-7xl xl:text-8xl font-bold word opacity-0 scale-0  text-center text-firstwhite bg-transparent">
             Niklas-dev
           </h1>
-          <p className="text-xl font-normal word opacity-0 scale-0  text-center text-gray-400 w-1/2 pt-4 bg-transparent">
+          <p className="lg:text-xl xl:text-2xl font-normal word opacity-0 scale-0  text-center text-gray-400 w-1/2 pt-4 bg-transparent">
             I am a fullstack focused webdeveloper. I design, plan out and
             develop web apps from the ground up to solve your problem.
           </p>
         </div>
-        <div className="mt-20 bg-transparent">
+        <div className="lg:mt-20 xl:mt-28 bg-transparent">
           <LottiePlayer
             loop
             autoplay
