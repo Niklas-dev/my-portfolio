@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="h-screen w-screen overflow-x-hidden ">
+    <main className="h-screen w-screen overflow-x-hidden scrollbar">
       <ParticlesBackground />
       <HomeSection />
       <ProjectsSection />
