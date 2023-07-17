@@ -46,9 +46,10 @@ export default function AboutSection() {
 
             <p className="bg-transparent text-gray-200 text-xl font-light pt-2">
               I think that teamwork, creativity and problem solving are
-              essential for a good developer. I am on conistent journy working
-              with these skills to provide robust and awesome applications, that
-              are not just funtional, but nice to the eye aswell.
+              essential for a good developer. I am on a conistent journey
+              working with these skills to provide robust and awesome
+              applications, that are not just funtional, but nice to the eye
+              aswell.
             </p>
           </div>
           <Link
