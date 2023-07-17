@@ -1,6 +1,7 @@
 "use client";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
 
 import ParticlesBackground from "@/components/ParticlesBackground";
@@ -51,6 +52,7 @@ export default function Home() {
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }
