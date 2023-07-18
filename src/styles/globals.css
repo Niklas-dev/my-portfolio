@@ -20,8 +20,8 @@
 .hidden-object {
   opacity: 0;
 
-  transform: translateY(300px);
-  transition: all 0.6s ease-in-out;
+  transform: translateY(250px);
+  transition: all 0.5s ease-in-out;
 }
 
 .show-object {
