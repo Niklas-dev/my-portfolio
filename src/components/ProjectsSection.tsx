@@ -49,7 +49,7 @@ export default function ProjectsSection() {
         image="/portfolio.png"
         description="My personal portfolio, demonstrating my projects and skills."
         tags={["nextjs", "tailwind", "design", "css", "ts-particles", "html5"]}
-        site="https://new-portfolio-three-gilt.vercel.app/"
+        site="https://niklas-dev.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/new-portfolio"
         reserve={true}
       />
