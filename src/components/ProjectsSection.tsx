@@ -25,6 +25,7 @@ export default function ProjectsSection() {
         reserve={false}
         site="https://scribbleseekerr.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/scribbleseekerr"
+        date="01.06.2023"
       />
       <ProjectCard
         title="NameNation"
@@ -34,6 +35,7 @@ export default function ProjectsSection() {
         reserve={true}
         site="https://namenation.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/namenation"
+        date="01.06.2023"
       />
       <ProjectCard
         title="PlainMindMap"
@@ -43,6 +45,7 @@ export default function ProjectsSection() {
         reserve={false}
         site="https://plain-mindmap-app.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/plain-mindmap-app"
+        date="01.06.2023"
       />
       <ProjectCard
         title="My Portfolio"
@@ -51,6 +54,7 @@ export default function ProjectsSection() {
         tags={["nextjs", "tailwind", "design", "css", "ts-particles", "html5"]}
         site="https://niklas-dev.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/new-portfolio"
+        date="01.06.2023"
         reserve={true}
       />
 

@@ -11,6 +11,7 @@ export default function ProjectCard({
   reserve,
   site,
   sourceCode,
+  date,
 }: {
   title: string;
   image: string;
@@ -19,6 +20,7 @@ export default function ProjectCard({
   reserve: boolean;
   site: string;
   sourceCode: string;
+  date: string;
 }) {
   const { ref, inView } = useInView({
     /* Optional options */
@@ -44,9 +46,14 @@ export default function ProjectCard({
       />
       <div className="bg-transparent flex flex-col justify-between">
         <div className="bg-transparent">
-          <h3 className="bg-transparent text-firstwhite font-bold text-3xl">
-            {title}
-          </h3>
+          <div className="flex flex-row items-baseline bg-transparent gap-4">
+            <h3 className="bg-transparent text-firstwhite font-bold text-3xl">
+              {title}
+            </h3>
+            <p className="bg-transparent text-gray-200 font-normal text-base">
+              {date}
+            </p>
+          </div>
           <p className="bg-transparent text-gray-200 font-normal text-xl">
             {description}
           </p>
