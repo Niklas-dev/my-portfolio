@@ -42,7 +42,7 @@ export default function ProjectCard({
         src={image}
         alt="scribbleseekerr"
         height={1000}
-placeholder="blur"
+        placeholder="blur"
         width={1000}
       />
       <div className="bg-transparent flex flex-col justify-between">
