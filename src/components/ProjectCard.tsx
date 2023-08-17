@@ -47,7 +47,7 @@ export default function ProjectCard({
       />
       <div className="bg-transparent flex flex-col justify-between">
         <div className="bg-transparent">
-          <div className="flex flex-row items-baseline bg-transparent gap-4">
+          <div className="flex flex-row justify-between items-baseline bg-transparent gap-4">
             <h3 className="bg-transparent text-firstwhite font-bold text-3xl">
               {title}
             </h3>
