@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+
 export default function ProjectCard({
   title,
   image,
@@ -43,6 +44,7 @@ export default function ProjectCard({
         alt="scribbleseekerr"
         height={1000}
         placeholder="blur"
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
         width={1000}
       />
       <div className="bg-transparent flex flex-col justify-between">
