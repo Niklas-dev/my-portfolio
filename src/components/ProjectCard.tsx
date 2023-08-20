@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { shimmer, toBase64 } from "@/utils";
 
 export default function ProjectCard({
   title,
