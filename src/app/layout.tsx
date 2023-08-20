@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "frontend",
     "engineering",
   ],
+  openGraph: {
+    images: "/og-image.png",
+  },
 };
 
 export default function RootLayout({
