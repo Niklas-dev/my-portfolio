@@ -18,9 +18,6 @@ export const metadata: Metadata = {
     "frontend",
     "engineering",
   ],
-  openGraph: {
-    images: "/og-image.png",
-  },
 };
 
 export default function RootLayout({
@@ -30,6 +27,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:image" content="/og-image.png" />
+
+        <meta property="og:title" content="Your Title" />
+
+        <meta
+          property="og:description"
+          content="A full description of the page."
+        />
+
+        <meta property="og:image:width" content="1200" />
+
+        <meta property="og:image:height" content="630" />
+      </head>
       <body className={roboto.className}>{children}</body>
     </html>
   );
