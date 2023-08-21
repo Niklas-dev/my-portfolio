@@ -18,7 +18,7 @@ export default function ContactSection() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    if (hasSent) {
+    if (!hasSent) {
       emailjs
         .sendForm(
           process.env.NEXT_PUBLIC_SERVICE_ID!,
