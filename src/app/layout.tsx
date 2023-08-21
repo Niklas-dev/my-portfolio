@@ -29,16 +29,18 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta property="og:image" content="/og-image.png" />
-
-        <meta property="twitter:image" content="0"/>
-
+        <meta property="twitter:image" content="0" />
         <meta property="og:title" content="Niklas-dev | Portfolio" />
-
         <meta
           property="og:description"
           content="This is the portfolio of Niklas-dev, a fullstack developer."
         />
+        <meta name="robots" content="index, follow" />
+        <meta property="twitter:image" content="0" />
+        <meta property="twitter:card" content="summary_large_image" />
 
+        <meta name="theme-color" content="#000" />
+        <meta name="msapplication-TileColor" content="#000" />
       </head>
       <body className={roboto.className}>{children}</body>
     </html>
