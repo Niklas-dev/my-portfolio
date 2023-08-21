@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/og-image.png" />
 
-        <meta property="twitter:image" content="0"/>
+        <meta property="twitter:image" content="0" />
 
         <meta property="og:title" content="Niklas-dev | Portfolio" />
 
@@ -39,6 +39,12 @@ export default function RootLayout({
           content="This is the portfolio of Niklas-dev, a fullstack developer."
         />
 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="theme-color" content="#00000000" />
+        <meta
+          property="og:image"
+          content="https://spaceshuttle-sbm-2-l2374277.deta.app/cdn/jddw5ebp1yv7.png"
+        />
       </head>
       <body className={roboto.className}>{children}</body>
     </html>
