@@ -6,7 +6,7 @@ export default function Skills() {
       <h3 className="bg-transparent text-firstwhite text-xl font-medium pt-2">
         Technologies
       </h3>
-      <div className="flex flex-row bg-transparent gap-2">
+      <div className="flex flex-row flex-wrap justify-start md:justify-end bg-transparent gap-2">
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           Django
         </div>
@@ -20,8 +20,6 @@ export default function Skills() {
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           Redis
         </div>
-      </div>
-      <div className="flex flex-row bg-transparent gap-2">
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           NextJS
         </div>
@@ -34,8 +32,6 @@ export default function Skills() {
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           REST
         </div>
-      </div>
-      <div className="flex flex-row bg-transparent gap-2">
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           Tensorflow
         </div>
@@ -45,8 +41,6 @@ export default function Skills() {
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           HTML
         </div>
-      </div>
-      <div className="flex flex-row bg-transparent gap-2">
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           Typescript
         </div>
@@ -59,8 +53,6 @@ export default function Skills() {
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           C#
         </div>
-      </div>
-      <div className="flex flex-row bg-transparent gap-2">
         <div className="bg-[#1e1e1e] shadow-md drop px-4 py-2 rounded-xl text-firstwhite">
           Flutter
         </div>
