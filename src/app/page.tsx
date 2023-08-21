@@ -31,14 +31,15 @@ export default function Home() {
       y: 0,
       ease: "power2.easeOut",
     });
+
     timeline.to(".nav-item", {
       duration: 0.3,
       opacity: 1,
 
       x: 0,
-      ease: "power2.easeOut",
+      ease: "power0.easeNone",
       stagger: {
-        amount: 1.2,
+        amount: 1,
       },
     });
 
