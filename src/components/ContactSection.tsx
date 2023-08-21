@@ -65,7 +65,7 @@ export default function ContactSection() {
           ref={form}
           className="bg-transparent flex flex-col gap-8 pt-4 h-full"
         >
-          <div className="flex flex-row bg-transparent gap-8">
+          <div className="flex flex-row bg-transparent gap-4">
             <input
               name="user_name"
               id="user_name"
