@@ -53,9 +53,9 @@ export default function ContactSection() {
           inView && "show-object"
         }`}
       >
-        <h4 className="bg-transparent text-firstwhite text-4xl font-bold">
+        <h2 className="bg-transparent text-firstwhite text-4xl font-bold">
           Write Me A Message
-        </h4>
+        </h2>
         <p className="bg-transparent text-gray-200 text-xl font-light w-3/4">
           Lets talk about your upcoming projects or ideas. I would love to work
           with you to achieve the best outcome.

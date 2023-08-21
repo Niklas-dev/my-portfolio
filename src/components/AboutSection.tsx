@@ -28,9 +28,9 @@ export default function AboutSection() {
         />
         <div className="w-full lg:w-[60%] h-full bg-transparent flex flex-col justify-between">
           <div className="bg-transparent flex flex-col">
-            <h4 className="bg-transparent text-firstwhite text-4xl font-bold">
+            <h2 className="bg-transparent text-firstwhite text-4xl font-bold">
               About
-            </h4>
+            </h2>
             <p className="bg-transparent text-gray-200 text-xl font-light pt-4">
               I&apos;m Niklas-dev, a versatile full-stack developer ready to
               bring your digital ideas to life. With expertise in both front-end

@@ -51,9 +51,9 @@ export default function ProjectCard({
       <div className="bg-transparent flex flex-col justify-between">
         <div className="bg-transparent">
           <div className="flex flex-row justify-between items-baseline bg-transparent gap-4">
-            <h3 className="bg-transparent text-firstwhite font-bold text-3xl">
+            <h2 className="bg-transparent text-firstwhite font-bold text-3xl">
               {title}
-            </h3>
+            </h2>
             <p className="bg-transparent text-gray-200 font-normal text-base">
               {date}
             </p>
