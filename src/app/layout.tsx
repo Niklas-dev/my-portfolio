@@ -39,9 +39,6 @@ export default function RootLayout({
           content="This is the portfolio of Niklas-dev, a fullstack developer."
         />
 
-        <meta property="og:image:width" content="1200" />
-
-        <meta property="og:image:height" content="630" />
       </head>
       <body className={roboto.className}>{children}</body>
     </html>
