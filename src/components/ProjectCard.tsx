@@ -34,7 +34,7 @@ export default function ProjectCard({
   return (
     <div
       ref={ref}
-      className={` md:w-[48rem] lg:w-[63rem] h-fit lg:h-[26rem] bg-[#0a0a0a] bg-opacity-95 rounded-xl flex ${
+      className={` md:w-[48rem] lg:w-[63rem] h-fit lg:h-[26rem] bg-[#0c0c0c] bg-opacity-95 rounded-xl flex ${
         reserve ? "flex-col md:flex-row-reverse" : "flex-col md:flex-row"
       } p-4 gap-4 shadow-xl hidden-object ${inView && "show-object"}`}
     >

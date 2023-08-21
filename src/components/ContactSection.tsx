@@ -49,7 +49,7 @@ export default function ContactSection() {
     >
       <div
         ref={ref}
-        className={` w-full lg:w-[65rem] h-fit  bg-[#0a0a0a]  bg-opacity-95  flex flex-col  gap-4 shadow-xl hidden-object p-4 lg:p-6 rounded-xl ${
+        className={` w-full lg:w-[65rem] h-fit  bg-[#0c0c0c]  bg-opacity-95  flex flex-col  gap-4 shadow-xl hidden-object p-4 lg:p-6 rounded-xl ${
           inView && "show-object"
         }`}
       >
