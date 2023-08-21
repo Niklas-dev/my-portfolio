@@ -30,6 +30,8 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/og-image.png" />
 
+        <meta property="twitter:image" content="0"/>
+
         <meta property="og:title" content="Niklas-dev | Portfolio" />
 
         <meta
