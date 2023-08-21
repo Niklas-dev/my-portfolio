@@ -40,11 +40,7 @@ export default function RootLayout({
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="theme-color" content="#00000000" />
-        <meta
-          property="og:image"
-          content="https://spaceshuttle-sbm-2-l2374277.deta.app/cdn/jddw5ebp1yv7.png"
-        />
+        <meta name="theme-color" content="#000" />
       </head>
       <body className={roboto.className}>{children}</body>
     </html>
