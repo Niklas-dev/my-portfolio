@@ -30,11 +30,11 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/og-image.png" />
 
-        <meta property="og:title" content="Your Title" />
+        <meta property="og:title" content="Niklas-dev | Portfolio" />
 
         <meta
           property="og:description"
-          content="A full description of the page."
+          content="This is the portfolio of Niklas-dev, a fullstack developer."
         />
 
         <meta property="og:image:width" content="1200" />
