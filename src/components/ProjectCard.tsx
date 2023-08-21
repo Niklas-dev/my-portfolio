@@ -26,7 +26,7 @@ export default function ProjectCard({
 }) {
   const { ref, inView } = useInView({
     /* Optional options */
-    threshold: 0.1,
+    threshold: 0.01,
     triggerOnce: true,
   });
 
