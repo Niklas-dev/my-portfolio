@@ -90,7 +90,10 @@ export default function ContactSection() {
             placeholder="Your message"
             className="h-full w-full bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium resize-none py-4 outline-none focus:border-2 border-white"
           />
-          <button className="bg-firstwhite font-medium text-xl py-2 w-full rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors ">
+          <button
+            aria-label="Submit"
+            className="bg-firstwhite font-medium text-xl py-2 w-full rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors "
+          >
             {hasSent ? (
               <FaCheck className="bg-transparent h-8" />
             ) : (
