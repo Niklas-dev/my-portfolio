@@ -23,7 +23,7 @@ export default function ProjectsSection() {
         report system and profile managment."
         tags={["django", "drf", "postgres", "oauth2", "nextjs", "tailwind"]}
         reserve={false}
-        site="https://scribbleseekerr.vercel.app/"
+        site="https://scribble.lat/"
         sourceCode="https://github.com/Niklas-dev/scribbleseekerr"
         date="15.06.2023"
       />
