@@ -57,6 +57,16 @@ export default function ProjectsSection() {
         date="22.06.2023"
         reserve={true}
       />
+      <ProjectCard
+        title="Porsche Configurator"
+        image="/porsche-config.png"
+        description="A UI only design implementation from dribbble. Implementation made for fhd screens."
+        tags={["nextjs", "tailwind", "design", "ui", "dribble", "html5"]}
+        site="https://porsche-config.vercel.app/"
+        sourceCode="https://github.com/Niklas-dev/porsche-config"
+        date="02.09.2023"
+        reserve={false}
+      />
 
       <OtherProjects />
     </div>
