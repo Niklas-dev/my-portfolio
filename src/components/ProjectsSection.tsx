@@ -61,7 +61,7 @@ export default function ProjectsSection() {
         title="Porsche Configurator"
         image="/porsche-config.png"
         description="A UI only design implementation from dribbble. Implementation made for fhd screens."
-        tags={["nextjs", "tailwind", "design", "ui", "dribble", "html5"]}
+        tags={["nextjs", "tailwind", "design", "ui", "dribbble", "html5"]}
         site="https://porsche-config.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/porsche-config"
         date="02.09.2023"
