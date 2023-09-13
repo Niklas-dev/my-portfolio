@@ -20,7 +20,7 @@ export default function ProjectsSection() {
         title="ScribbleSeekerr"
         image="/scribbleseekerr.png"
         description="A webapp to share text content. Featuring likes, full text search,
-        report system and profile managment. [DOMAIN SWITCH, BACK ONLINE SOON]"
+        report system and profile managment."
         tags={["django", "drf", "postgres", "oauth2", "nextjs", "tailwind"]}
         reserve={false}
         site="https://scribble.lat/"
