@@ -43,6 +43,7 @@ export default function ProjectCard({
         className="h-full w-full md:w-[45%] object-cover rounded-xl text-firstwhite hover:grayscale transition-colors cursor-pointer"
         src={image}
         alt="scribbleseekerr"
+        priority
         height={1000}
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
