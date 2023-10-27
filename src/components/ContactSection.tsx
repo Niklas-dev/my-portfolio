@@ -88,7 +88,7 @@ export default function ContactSection() {
             id="message"
             required
             placeholder="Your message"
-            className="h-full w-full bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium resize-none py-4 outline-none focus:border-2 border-white"
+            className="h-28 w-full bg-[#1e1e1e] rounded-lg text-firstwhite px-4 text-lg font-medium resize-none py-4 outline-none focus:border-2 border-white"
           />
           <button
             aria-label="Submit"
