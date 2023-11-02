@@ -16,6 +16,7 @@ export default function ProjectsSection() {
           See what I have created during my fullstack journey.
         </p>
       </div>
+
       <ProjectCard
         title="ScribbleSeekerr"
         image="/scribbleseekerr.png"
@@ -27,6 +28,7 @@ export default function ProjectsSection() {
         sourceCode="https://github.com/Niklas-dev/scribbleseekerr"
         date="15.06.2023"
       />
+
       <ProjectCard
         title="NameNation"
         image="/namenation.png"
