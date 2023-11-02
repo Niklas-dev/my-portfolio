@@ -49,10 +49,10 @@ export default function SpotLightWrapper({
       className={` ${className} relative overflow-hidden`}
     >
       <div
-        className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+        className="pointer-events-none absolute -inset-px opacity-0 transition-colors duration-300 "
         style={{
           opacity,
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgb(108, 117, 125, 0.35), transparent 35%)`,
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgb(255, 255, 255, 0.5), transparent 35%)`,
         }}
       />
       {children}

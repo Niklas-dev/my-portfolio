@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Link from "next/link";
 import Image from "next/image";
 import { FaCheck, FaArrowRight } from "react-icons/fa";
+import SpotLightWrapper from "./SpotLightWrapper";
 export default function ContactSection() {
   const { ref, inView } = useInView({
     /* Optional options */
