@@ -48,16 +48,6 @@ export default function ProjectsSection() {
         date="17.06.2023"
       />
       <ProjectCard
-        title="My Portfolio"
-        image="/portfolio.png"
-        description="My personal portfolio, demonstrating my projects and skills."
-        tags={["nextjs", "tailwind", "design", "css", "ts-particles", "html5"]}
-        site="https://niklas-dev.vercel.app/"
-        sourceCode="https://github.com/Niklas-dev/new-portfolio"
-        date="22.06.2023"
-        reserve={true}
-      />
-      <ProjectCard
         title="Porsche Configurator"
         image="/porsche-config.png"
         description="A UI only design implementation from dribbble. Implementation made for fhd screens."
