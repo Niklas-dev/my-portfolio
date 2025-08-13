@@ -17,13 +17,41 @@ export default function ProjectsSection() {
         </p>
       </div>
       <ProjectCard
+        title="TrendPilot"
+        image="/trendpilot.png"
+        description="A webapp to help finding content ideas for social media. Scraping reddit and youtube to find the latest trends. Use AI to generate ideas for your niche."
+        tags={[
+          "fastapi",
+          "openai",
+          "postgres",
+          "oauth2",
+          "nextjs",
+          "tailwind",
+          "celery",
+        ]}
+        reserve={true}
+        site="https://trendpilot.pro"
+        sourceCode=""
+        date="15.06.2024"
+      />
+      <ProjectCard
+        title="FastLaunchAPI"
+        image="/fastlaunchapi.png"
+        description="A FastAPI production ready template with user management, authentication, payments and more. Perfect for your next project."
+        tags={["fastapi", "openai", "postgres", "oauth2", "redis", "celery"]}
+        reserve={false}
+        site="https://trendpilot.pro"
+        sourceCode="https://github.com/Niklas-dev/fastapi-quick-template"
+        date="15.06.2025"
+      />
+      <ProjectCard
         title="ScribbleSeekerr"
         image="/scribbleseekerr.png"
         description="A webapp to share text content. Featuring likes, full text search,
         report system and profile managment."
         tags={["django", "drf", "postgres", "oauth2", "nextjs", "tailwind"]}
-        reserve={false}
-        site="https://scribble.lat/"
+        reserve={true}
+        site=""
         sourceCode="https://github.com/Niklas-dev/scribbleseekerr"
         date="15.06.2023"
       />
@@ -32,7 +60,7 @@ export default function ProjectsSection() {
         image="/namenation.png"
         description="Check the national background of your name along with an age conntected to the given input."
         tags={["nextjs", "rest", "api", "tailwind", "hooks"]}
-        reserve={true}
+        reserve={false}
         site="https://namenation.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/namenation"
         date="14.03.2023"
@@ -42,7 +70,7 @@ export default function ProjectsSection() {
         image="/plainmindmap.png"
         description="Easily create mind maps about every topic. Enhance the power of gpt by just using the provided layout."
         tags={["nextjs", "react-flow", "tailwind", "gpt"]}
-        reserve={false}
+        reserve={true}
         site="https://plain-mindmap-app.vercel.app/"
         sourceCode="https://github.com/Niklas-dev/plain-mindmap-app"
         date="17.06.2023"

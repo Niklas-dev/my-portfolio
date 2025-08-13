@@ -85,20 +85,24 @@ export default function ProjectCard({
         </div>
 
         <div className="flex flex-row w-full h-fit gap-4 bg-transparent pt-4">
-          <Link
-            className="bg-firstwhite font-medium text-xl py-2  w-1/2 rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors"
-            target="_blank"
-            href={site}
-          >
-            View Site
-          </Link>
-          <Link
-            className="bg-transparent border-firstwhite border-2 font-medium text-firstwhite text-xl py-2 w-1/2 rounded-xl flex justify-center items-center hover:bg-black transition-colors"
-            target="_blank"
-            href={sourceCode}
-          >
-            Source Code
-          </Link>
+          {site && (
+            <Link
+              className="bg-firstwhite font-medium text-xl py-2  w-1/2 rounded-xl flex justify-center items-center hover:bg-gray-300 transition-colors"
+              target="_blank"
+              href={site}
+            >
+              View Site
+            </Link>
+          )}
+          {sourceCode && (
+            <Link
+              className="bg-transparent border-firstwhite border-2 font-medium text-firstwhite text-xl py-2 w-1/2 rounded-xl flex justify-center items-center hover:bg-black transition-colors"
+              target="_blank"
+              href={sourceCode}
+            >
+              Source Code
+            </Link>
+          )}
         </div>
       </div>
     </div>
