@@ -40,7 +40,7 @@ export default function ProjectsSection() {
         description="A FastAPI production ready template with user management, authentication, payments and more. Perfect for your next project."
         tags={["fastapi", "openai", "postgres", "oauth2", "redis", "celery"]}
         reserve={false}
-        site="https://trendpilot.pro"
+        site="https://fastlaunchapi.dev"
         sourceCode="https://github.com/Niklas-dev/fastapi-quick-template"
         date="15.06.2025"
       />
